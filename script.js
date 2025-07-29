@@ -2,8 +2,10 @@
 
 // Espera a que el contenido del DOM esté completamente cargado
 document.addEventListener("DOMContentLoaded", function () {
-  console.log("Profe Crea listo.");
-
+  // Selecciona el botón de contacto y añade un evento de clic
+  console.log("Profe Crea listo."); 
+}
+);
   // Resaltar el enlace activo del menú
   const currentLocation = location.href;
   const menuItems = document.querySelectorAll("nav ul.menu li a");
