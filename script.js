@@ -15,6 +15,8 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   // Ejemplo: Alerta desde botón (útil para contacto o pruebas)
+document.addEventListener("DOMContentLoaded", function () {
+  // Obtener el botón contacto
   const contactoBtn = document.getElementById("contacto-btn");
   if (contactoBtn) {
     contactoBtn.addEventListener("click", function () {
