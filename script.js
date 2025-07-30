@@ -1,11 +1,8 @@
 // script.js
 
-// Espera a que el contenido del DOM esté completamente cargado
-document.addEventListener("DOMContentLoaded", function () {
-  // Selecciona el botón de contacto y añade un evento de clic
-  console.log("Profe Crea listo."); 
-}
-);
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("Profe Crea listo.");
+
   // Resaltar el enlace activo del menú
   const currentLocation = location.href;
   const menuItems = document.querySelectorAll("nav ul.menu li a");
@@ -16,9 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  // Ejemplo: Alerta desde botón (útil para contacto o pruebas)
-document.addEventListener("DOMContentLoaded", function () {
-  // Obtener el botón contacto
+  // Alerta desde botón de contacto
   const contactoBtn = document.getElementById("contacto-btn");
   if (contactoBtn) {
     contactoBtn.addEventListener("click", function () {

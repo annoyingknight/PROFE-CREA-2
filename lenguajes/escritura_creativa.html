@@ -32,28 +32,36 @@
       </a>
     </div>
 <!-- Logo y título --> 
-    <h1>Profe Crea</h1>
-    <p>Recursos y estrategias para docentes de primaria</p>
-  </header>
-
+<header class="site-header">
+  <div class="container-header">
+    <div class="branding">
+      <img src="../img/logo_sin_fondo.png" alt="Logo Profe Crea" class="logo-img" />
+    </div>
+    
+    <form class="search-form" action="#" method="get">
+      <input type="text" name="q" placeholder="Buscar..." />
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</header>
   <nav>
     <ul class="menu">
       <li><a href="../index.html">Inicio</a></li>
       <li>
         <a href="#">Lenguajes</a>
         <ul class="submenu">
-          <li><a href="escritura_creativa.html">Escritura Creativa</a></li>
-          <li><a href="gramatica.html">Gramática</a></li>
-          <li><a href="lectoescritura.html">Lectoescritura</a></li>
+          <li><a href="../lenguajes/escritura_creativa.html">Escritura Creativa</a></li>
+          <li><a href="../lenguajes/gramatica.html">Gramática</a></li>
+          <li><a href="../lenguajes/lectoescritura.html">Lectoescritura</a></li>
         </ul>
       </li>
       <li>
         <a href="#">Matemáticas</a>
         <ul class="submenu">
-          <li><a href="../matematicas/conteo.html">Conteo</a></li>
-          <li><a href="../matematicas/juegos.html">Juegos</a></li>
-          <li><a href="../matematicas/operatoria.html">Operatoria</a></li>
-          <li><a href="../matematicas/problemas.html">Problemas</a></li>
+          <li><a href="conteo.html">Conteo</a></li>
+          <li><a href="juegos.html">Juegos</a></li>
+          <li><a href="operatoria.html">Operatoria</a></li>
+          <li><a href="problemas.html">Problemas</a></li>
         </ul>
       </li>
       <li><a href="../flashcards.html">Flashcards</a></li>
@@ -62,6 +70,7 @@
       <li><a href="../contacto.html">Contacto</a></li>
     </ul>
   </nav>
+</header>
 
   <main>
     <h2>Escritura Creativa</h2>
@@ -71,5 +80,7 @@
   <footer>
     <p>&copy; 2025 Profe Crea. Todos los derechos reservados.</p>
   </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>

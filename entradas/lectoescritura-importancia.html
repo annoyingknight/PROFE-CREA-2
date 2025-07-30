@@ -32,19 +32,50 @@
       </a>
     </div>
 <!-- Logo y título --> 
-    <h1>Profe Crea</h1>
-    <nav>
-      <ul class="menu">
-        <li><a href="../index.html">Inicio</a></li>
-        <li><a href="../flashcards.html">Flashcards</a></li>
-        <li><a href="../dibujos.html">Dibujos</a></li>
-        <li><a href="../tienda.html">Tienda</a></li>
-        <li><a href="../contacto.html">Contacto</a></li>
-      </ul>
-    </nav>
-  </header>
+<header class="site-header">
+  <div class="container-header">
+    <div class="branding">
+      <img src="../img/logo_sin_fondo.png" alt="Logo Profe Crea" class="logo-img" />
+    </div>
+    
+    <form class="search-form" action="#" method="get">
+      <input type="text" name="q" placeholder="Buscar..." />
+      <button type="submit"><i class="fa fa-search"></i></button>
+    </form>
+  </div>
+</header>
 
-  <main>
+  <nav>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        
+        <li> 
+          <a href="#">Lenguajes</a>
+          <ul class="submenu">
+            <li><a href="../lenguajes/escritura_creativa.html">Escritura Creativa</a></li>
+            <li><a href="../lenguajes/gramatica.html">Gramática</a></li>
+            <li><a href="../lenguajes/lectoescritura.html">Lectoescritura</a></li>
+          </ul>
+        
+        <li>
+           <a href="#">Matemáticas</a>
+           <ul class="submenu">
+            <li><a href="../matematicas/conteo.html">Conteo</a></li>
+            <li><a href="../matematicas/juegos.html">Juegos</a></li>
+            <li><a href="../matematicas/operatoria.html">Operatoria</a></li>
+            <li><a href="../matematicas/problemas.html">Problemas</a></li>
+          </ul>
+        </li>
+        
+            <li><a href="flashcards.html">Flashcards</a></li>
+            <li><a href="dibujos.html">Dibujos</a></li>
+            <li><a href="tienda.html">Tienda</a></li>
+            <li><a href="contacto.html" class="active">Contacto</a></li>
+          </ul>
+    </nav>
+</header>
+
+   <main>
     <article class="entrada">
       <h2>La importancia de la lectoescritura en la educación primaria</h2>
       <p><br><strong>Publicado por:</strong> Atzin Quezada | <strong>Fecha:</strong> 27 de julio de 2025</p>
@@ -57,8 +88,9 @@
     </article>
   </main>
 
-  <footer>
-    <p>&copy; 2025 Profe Crea. Todos los derechos reservados.</p>
-  </footer>
+    <footer>
+      <p>&copy; 2025 Profe Crea. Todos los derechos reservados.</p>
+    </footer>
+  <script src="script.js"></script>
 </body>
 </html>
