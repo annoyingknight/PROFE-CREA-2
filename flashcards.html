@@ -44,15 +44,33 @@
     </form>
   </div>
 </header>
+
   <nav>
     <ul class="menu">
       <li><a href="index.html">Inicio</a></li>
-      <li><a href="lenguajes/gramatica.html">Lenguajes</a></li>
-      <li><a href="matematicas/juegos.html">Matemáticas</a></li>
-      <li><a href="flashcards.html">Flashcards</a></li>
-      <li><a href="dibujos.html">Dibujos</a></li>
-      <li><a href="tienda.html">Tienda</a></li>
-      <li><a href="contacto.html" class="active">Contacto</a></li>
+
+        <li> 
+          <a href="#">Lenguajes</a>
+          <ul class="submenu">
+            <li><a href="lenguajes/escritura_creativa.html">Escritura Creativa</a></li>
+            <li><a href="lenguajes/gramatica.html">Gramática</a></li>
+            <li><a href="lenguajes/lectoescritura.html">Lectoescritura</a></li>
+          </ul>
+        
+        <li>
+           <a href="#">Matemáticas</a>
+           <ul class="submenu">
+            <li><a href="matematicas/conteo.html">Conteo</a></li>
+            <li><a href="matematicas/juegos.html">Juegos</a></li>
+            <li><a href="matematicas/operatoria.html">Operatoria</a></li>
+            <li><a href="matematicas/problemas.html">Problemas</a></li>
+          </ul>
+        </li>
+
+        <li><a href="flashcards.html">Flashcards</a></li>
+        <li><a href="dibujos.html">Dibujos</a></li>
+        <li><a href="tienda.html">Tienda</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
     </ul>
   </nav>
 </header>
@@ -62,10 +80,21 @@
     <p>Las flashcards son tarjetas educativas que ayudan a reforzar conceptos clave mediante la memoria visual. Son ideales para repasar vocabulario, operaciones básicas, sonidos iniciales y más, de forma rápida y divertida.</p>
   </main>
 
+  <div class="recurso-descargable">
+  <div class="recurso-imagen">
+    <img src="ruta-de-tu-imagen.jpg" alt="Flashcards de números 1 al 10">
+    <div class="recurso-overlay">
+      <a href="ruta-del-pdf.pdf" class="recurso-boton-descarga" target="_blank">Descargar PDF</a>
+    </div>
+  </div>
+  <h3 class="recurso-titulo"><a href="#">Flashcards: Números del 1 al 10</a></h3>
+  <p class="recurso-categorias">Categoría: <a href="#">Matemáticas</a>, <a href="#">Flashcards Educativas</a></p>
+</div>
+
   <footer>
     <p>&copy; 2025 ProfeCrea. Todos los derechos reservados.</p>
   </footer>
 
-  <script src="script.js"></script>
+  <script src="js/main.js" defer></script>
 </body>
 </html>

@@ -218,7 +218,7 @@ footer {
   cursor: pointer;
 }
 
-/* Estilos para el botón de contacto */
+/* Estilos para el área de contacto */
 .form-container {
   max-width: 700px;
   margin: 2rem auto;
@@ -226,4 +226,75 @@ footer {
   background-color: #ffffff;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Recursos descargables */
+.recurso-descargable {
+  width: 300px;
+  margin: 20px auto;
+  text-align: center;
+  position: relative;
+  font-family: 'Arial', sans-serif;
+  background: #f8f8f8;
+  border: 1px solid #e0e0e0;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.recurso-imagen {
+  position: relative;
+}
+
+.recurso-imagen img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.recurso-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(33, 33, 33, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.recurso-imagen:hover .recurso-overlay {
+  opacity: 1;
+}
+
+.recurso-boton-descarga {
+  background: #2ecc71;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.recurso-titulo {
+  margin: 10px 0;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+.recurso-titulo a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.recurso-categorias {
+  font-size: 0.9rem;
+  color: #777;
+}
+.recurso-categorias a {
+  color: #3498db;
+  text-decoration: none;
 }
