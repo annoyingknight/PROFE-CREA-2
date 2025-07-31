@@ -1,3 +1,12 @@
+:root {
+  --primary-blue: #4A90E2; /* Un azul vibrante */
+  --secondary-orange: #F5A623; /* Un naranja enérgico */
+  --text-color: #333; /* Color de texto oscuro */
+  --bg-color: #f4f4f4; /* Color de fondo claro */
+  --white: #ffffff; /* Blanco */
+  --black: #000000; /* Negro */
+}
+
 /* Estilos generales para la página web */
 html {
   scroll-behavior: smooth;
@@ -11,16 +20,16 @@ html {
 }
 
 body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: #f4f6f8;
-  color: #333;
+  font-family: 'Open Sans', sans-serif; /* Fuente legible */
+  background-color: var(--bg-color);
+  color: var(--text-color);
   line-height: 1.6;
 }
 
 /* Encabezado */
 header {
-  background-color: #8d8bff;
-  color: white;
+  background-color: var(--primary-blue);
+  color: var(--white);
   padding: 0px 0;
   text-align: center;
 }
@@ -31,7 +40,7 @@ header h1 {
 
 /* Menú principal */
 nav {
-  background-color: #8d8bff;
+  background-color: var(--primary-blue);
 }
 
 .menu {
@@ -52,13 +61,13 @@ nav {
 .menu a {
   display: block;
   padding: 12px 16px;
-  color: rgb(0, 0, 0);
+  color: var(--white); /* Enlaces blancos */
   text-decoration: none;
-  transition: background 0.1s;
+  transition: background 0.3s ease;
 }
 
 .menu a:hover {
-  background-color: #3949ab;
+  background-color: #357ABD; /* Un azul un poco más oscuro al pasar el ratón */
 }
 
 /* Submenús */
@@ -66,19 +75,20 @@ nav {
   display: none;
   position: absolute;
   top: 100%;
-  background-color: #5c6bc0;
+  background-color: #357ABD; /* Fondo de submenú */
   list-style: none;
   min-width: 180px;
   z-index: 1000;
 }
 
 .submenu li {
-  border-top: 1px solid #7986cb;
+  border-top: 1px solid #4A90E2;
 }
 
 .submenu a {
   padding: 10px 16px;
   white-space: nowrap;
+  color: var(--white); /* Enlaces de submenú blancos */
 }
 
 .menu li:hover .submenu {
@@ -94,8 +104,8 @@ main {
 
 /* Pie de página */
 footer {
-  background-color: #3f51b5;
-  color: white;
+  background-color: var(--primary-blue);
+  color: var(--white);
   text-align: center;
   padding: 15px;
   margin-top: 40px;
@@ -122,6 +132,7 @@ footer {
     display: block;
   }
 }
+
 /* Estilos para el logo y título */
 .logo-title {
   display: flex;
@@ -141,30 +152,30 @@ footer {
   align-items: center;
   justify-content: center;
   gap: 15px;
-  background-color: #00000000;
+  background-color: transparent;
   padding: 12px 0;
 }
 
 .social-text {
-  color: #000000;
+  color: var(--text-color);
   font-size: 1rem;
   font-weight: bold;
 }
 
 .social-icon {
-  color: #000000;
+  color: var(--text-color);
   font-size: 1.2rem;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .social-icon:hover {
   transform: scale(1.2);
-  color: #00bfff;
+  color: var(--secondary-orange); /* Naranja al pasar el ratón */
 }
 
 /* búsqueda */
 .site-header {
-  background-color: #ffffff;
+  background-color: var(--white);
   padding: 10px 20px;
   border-bottom: 2px solid #ccc;
 }
@@ -190,14 +201,14 @@ footer {
 .site-title {
   font-size: 1.8rem;
   font-weight: bold;
-  color: #1c1c1c;
+  color: var(--text-color);
   margin: 0;
 }
 
 .search-form {
   display: flex;
   align-items: center;
-  background: #f5f5f5;
+  background: var(--bg-color);
   border-radius: 4px;
   padding: 5px;
 }
@@ -214,87 +225,143 @@ footer {
   background: none;
   border: none;
   font-size: 1.2rem;
-  color: #333;
+  color: var(--text-color);
   cursor: pointer;
 }
 
-/* Estilos para el área de contacto */
+/* Estilos para el botón de contacto */
 .form-container {
   max-width: 700px;
   margin: 2rem auto;
   padding: 1rem;
-  background-color: #ffffff;
+  background-color: var(--white);
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* Recursos descargables */
-.recurso-descargable {
-  width: 300px;
-  margin: 20px auto;
-  text-align: center;
-  position: relative;
-  font-family: 'Arial', sans-serif;
-  background: #f8f8f8;
-  border: 1px solid #e0e0e0;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+/* Estilos para los enlaces en general */
+a {
+  color: var(--primary-blue);
+  text-decoration: none;
 }
 
-.recurso-imagen {
-  position: relative;
+a:hover {
+  text-decoration: underline;
 }
 
-.recurso-imagen img {
-  width: 100%;
-  height: auto;
-  display: block;
+/* Estilos para títulos (H1, H2, etc.) */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--primary-blue);
+  margin-bottom: 15px;
 }
 
-.recurso-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(33, 33, 33, 0.6);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  opacity: 0;
-  transition: opacity 0.3s ease;
-}
-
-.recurso-imagen:hover .recurso-overlay {
-  opacity: 1;
-}
-
-.recurso-boton-descarga {
-  background: #2ecc71;
-  color: #fff;
+/* Estilos para botones (ejemplo) */
+.button {
+  display: inline-block;
+  background-color: var(--secondary-orange);
+  color: var(--white);
   padding: 10px 20px;
-  text-decoration: none;
-  font-weight: bold;
-  border-radius: 6px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  text-decoration: none; /* Asegurar que los enlaces con clase button no tengan subrayado */
 }
 
-.recurso-titulo {
-  margin: 10px 0;
-  font-size: 1.1rem;
-  color: #333;
+.button:hover {
+  background-color: #E89616; /* Un naranja un poco más oscuro */
 }
 
-.recurso-titulo a {
-  text-decoration: none;
-  color: inherit;
+/* Estilos para imágenes */
+img {
+  max-width: 100%; /* Las imágenes no excederán el ancho de su contenedor */
+  height: auto;
+  display: block; /* Elimina espacio extra debajo de la imagen */
 }
 
-.recurso-categorias {
-  font-size: 0.9rem;
-  color: #777;
+/* Estilos para la sección de Recursos Destacados */
+.featured-resources {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #e9f5ff; /* Un fondo azul claro */
+  border-radius: 8px;
 }
-.recurso-categorias a {
-  color: #3498db;
-  text-decoration: none;
+
+.featured-resources h2 {
+  color: var(--primary-blue);
+  margin-bottom: 20px;
+  text-align: center;
 }
+
+.resource-item {
+  background-color: var(--white);
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.resource-item h3 {
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+
+.resource-item p {
+  margin-bottom: 15px;
+}
+
+/* Estilos para la cuadrícula de tarjetas de flashcards */
+.flashcard-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Columnas flexibles */
+  gap: 20px; /* Espacio entre tarjetas */
+  margin-top: 20px;
+}
+
+.flashcard-card {
+  background-color: var(--white);
+  border-radius: 8px;
+  overflow: hidden; /* Asegura que la imagen no se desborde */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
+  display: flex;
+  flex-direction: column; /* Contenido apilado */
+  transition: transform 0.3s ease; /* Animación al pasar el ratón */
+}
+
+.flashcard-card:hover {
+  transform: translateY(-5px); /* Efecto flotante al pasar el ratón */
+}
+
+.card-image {
+  width: 100%;
+  height: 180px; /* Altura fija para la imagen */
+  object-fit: cover; /* Ajusta la imagen para cubrir el espacio */
+}
+
+.card-content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Permite que el contenido crezca */
+}
+
+.card-content h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: var(--primary-blue);
+}
+
+.card-content p {
+  flex-grow: 1; /* Permite que el párrafo crezca y empuje el botón hacia abajo */
+  margin-bottom: 15px;
+}
+
+.card-content .button {
+  align-self: flex-start; /* Alinea el botón al inicio */
+}
+
+/* Fuentes de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
+/* Considerar añadir una fuente display si se desea */
+/* @import url('https://fonts.googleapis.com/css2?family=...'); */

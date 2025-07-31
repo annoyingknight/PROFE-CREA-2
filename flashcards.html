@@ -12,7 +12,6 @@
 </head>
 <body>
   <header>
-<!-- ... otros enlaces -->
     <div class="social-bar">
         <span class="social-text">Síguenos:</span>
         <a href="https://www.facebook.com/profe.creaaa/" target="_blank" class="social-icon facebook" aria-label="Facebook">
@@ -31,70 +30,75 @@
           <i class="fa-brands fa-tiktok"></i>
       </a>
     </div>
-<!-- Logo y título --> 
-<header class="site-header">
-  <div class="container-header">
-    <div class="branding">
-      <img src="img/logo_sin_fondo.png" alt="Logo Profe Crea" class="logo-img" />
+
+    <div class="site-header">
+      <div class="container-header">
+        <div class="branding">
+          <img src="img/logo_sin_fondo.png" alt="Logo Profe Crea" class="logo-img" />
+        </div>
+
+        <form class="search-form" action="#" method="get">
+          <input type="text" name="q" placeholder="Buscar...">
+          <button type="submit"><i class="fa fa-search"></i></button>
+        </form>
+      </div>
     </div>
-    
-    <form class="search-form" action="#" method="get">
-      <input type="text" name="q" placeholder="Buscar..." />
-      <button type="submit"><i class="fa fa-search"></i></button>
-    </form>
-  </div>
-</header>
 
-  <nav>
-    <ul class="menu">
-      <li><a href="index.html">Inicio</a></li>
-
-        <li> 
-          <a href="#">Lenguajes</a>
-          <ul class="submenu">
-            <li><a href="lenguajes/escritura_creativa.html">Escritura Creativa</a></li>
-            <li><a href="lenguajes/gramatica.html">Gramática</a></li>
-            <li><a href="lenguajes/lectoescritura.html">Lectoescritura</a></li>
-          </ul>
-        
-        <li>
-           <a href="#">Matemáticas</a>
-           <ul class="submenu">
-            <li><a href="matematicas/conteo.html">Conteo</a></li>
-            <li><a href="matematicas/juegos.html">Juegos</a></li>
-            <li><a href="matematicas/operatoria.html">Operatoria</a></li>
-            <li><a href="matematicas/problemas.html">Problemas</a></li>
-          </ul>
-        </li>
-
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="lenguajes/gramatica.html">Lenguajes</a></li>
+        <li><a href="matematicas/juegos.html">Matemáticas</a></li>
         <li><a href="flashcards.html">Flashcards</a></li>
         <li><a href="dibujos.html">Dibujos</a></li>
         <li><a href="tienda.html">Tienda</a></li>
-        <li><a href="contacto.html">Contacto</a></li>
-    </ul>
-  </nav>
-</header>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
 
   <main>
     <h2>Flashcards</h2>
-    <p>Las flashcards son tarjetas educativas que ayudan a reforzar conceptos clave mediante la memoria visual. Son ideales para repasar vocabulario, operaciones básicas, sonidos iniciales y más, de forma rápida y divertida.</p>
-  </main>
+    <p>En <strong>Profe Crea</strong>, sabemos que buscas herramientas prácticas que enriquezcan tus clases y capturen la atención de tus estudiantes. Nuestras flashcards son ese recurso versátil que te permitirá abordar desde el repaso de conceptos básicos hasta la introducción de temas complejos de una manera visual, interactiva y divertida.</p>
+    <p><br>Diseñadas pensando en la educación primaria, nuestras colecciones te ayudarán a reforzar vocabulario, agilizar operaciones matemáticas, explorar sonidos iniciales y mucho más. Son ideales para actividades individuales, grupales o como un recurso rápido para esos momentos de transición en el aula.</p>
+    <p><br><strong>Explora nuestra variedad y descubre cómo las flashcards pueden transformar tus lecciones en experiencias de aprendizaje memorables y efectivas.</strong></p>
 
-  <div class="recurso-descargable">
-  <div class="recurso-imagen">
-    <img src="ruta-de-tu-imagen.jpg" alt="Flashcards de números 1 al 10">
-    <div class="recurso-overlay">
-      <a href="ruta-del-pdf.pdf" class="recurso-boton-descarga" target="_blank">Descargar PDF</a>
-    </div>
-  </div>
-  <h3 class="recurso-titulo"><a href="#">Flashcards: Números del 1 al 10</a></h3>
-  <p class="recurso-categorias">Categoría: <a href="#">Matemáticas</a>, <a href="#">Flashcards Educativas</a></p>
-</div>
+    <!-- Contenido principal de las flashcards con diseño de tarjetas -->
+    <section class="flashcards-content">
+      <h2>Explora Nuestras Colecciones de Flashcards</h2>
+      <div class="flashcard-grid">
+
+        <!-- Tarjeta para Flashcards de Matemáticas -->
+        <div class="flashcard-card">
+          <img src="img/img-numeros-del-1-al-10-mini.png" alt="Flashcards de Matemáticas" class="card-image">
+          <div class="card-content">
+            <h3>Flashcards de Matemáticas</h3>
+            <p>Sets para practicar suma, resta, multiplicación, formas, etc.</p>
+            <a href="https://drive.google.com/file/d/1YgtiyqY0iLj0IO2k4Uj712JKMWctcZdT/view?usp=drive_link" class="button">Ver Sets</a>
+          </div>
+        </div>
+
+        <!-- Tarjeta para Flashcards de Lenguaje - Alfabeto LSM -->
+        <div class="flashcard-card">
+          <img src="img/img-alfabeto-de-señas.png" alt="Alfabeto con LSM" class="card-image">
+          <div class="card-content">
+            <h3>Alfabeto con LSM</h3>
+            <p>Aprende y enseña el abecedario utilizando el Lenguaje de Señas Mexicano.</p>
+            <a href="https://drive.google.com/file/d/1a2PfMr47WApEXqlr9VgB37mS2-Dd5c5q/view?usp=sharing" class="button" target="_blank">Descargar PDF</a>
+          </div>
+        </div>
+
+        <!-- Puedes añadir más tarjetas de flashcards aquí para otros sets -->
+
+      </div>
+    </section>
+
+  </main>
 
   <footer>
     <p>&copy; 2025 ProfeCrea. Todos los derechos reservados.</p>
   </footer>
 
-  <script src="js/main.js" defer></script>
+  <script src="script.js"></script>
 </body>
 </html>
