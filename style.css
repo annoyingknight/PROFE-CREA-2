@@ -361,6 +361,142 @@ img {
   align-self: flex-start; /* Alinea el botón al inicio */
 }
 
+/* Estilos para la cuadrícula de dibujos */
+.dibujo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Columnas flexibles */
+  gap: 20px; /* Espacio entre tarjetas */
+  margin-top: 20px;
+}
+
+.dibujo-card {
+  background-color: var(--white);
+  border-radius: 8px;
+  overflow: hidden; /* Asegura que la imagen no se desborde */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Sombra suave */
+  display: flex;
+  flex-direction: column; /* Contenido apilado */
+  transition: transform 0.3s ease; /* Animación al pasar el ratón */
+}
+
+.dibujo-card:hover {
+  transform: translateY(-5px); /* Efecto flotante al pasar el ratón */
+}
+
+.card-image {
+  width: 100%;
+  height: 180px; /* Altura fija para la imagen */
+  object-fit: cover; /* Ajusta la imagen para cubrir el espacio */
+}
+
+.card-content {
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Permite que el contenido crezca */
+}
+
+.card-content h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+  color: var(--primary-blue);
+}
+
+.card-content p {
+  flex-grow: 1; /* Permite que el párrafo crezca y empuje el botón hacia abajo */
+  margin-bottom: 15px;
+}
+
+.card-content .button {
+  align-self: flex-start; /* Alinea el botón al inicio */
+}
+
+/* Estilos para el footer */
+footer {
+  background-color: #357ABD; /* Color de fondo del footer */
+  color: #ffffff; /* Color del texto */
+  padding: 40px 20px; /* Espacio interno */
+  font-size: 14px; /* Tamaño de fuente */
+  text-align: center; /* Centrar el texto */
+}
+
+.footer-container {
+  display: flex; /* Organizar las secciones en fila */
+  flex-wrap: wrap; /* Permitir que las secciones se envuelvan en pantallas pequeñas */
+  justify-content: space-around; /* Distribuir el espacio entre las secciones */
+  max-width: 1200px; /* Ancho máximo del contenedor */
+  margin: 0 auto; /* Centrar el contenedor */
+  margin-bottom: 20px; /* Espacio inferior */
+}
+
+.footer-section {
+  flex: 1; /* Permitir que las secciones crezcan para llenar el espacio */
+  min-width: 200px; /* Ancho mínimo de cada sección */
+  margin: 10px; /* Espacio alrededor de cada sección */
+}
+
+.footer-section h3 {
+  color: #ffffff; /* Color de los títulos de sección */
+  margin-bottom: 15px; /* Espacio inferior */
+  font-size: 16px; /* Tamaño de fuente */
+}
+
+.footer-section p {
+  line-height: 1.6; /* Espaciado de línea */
+}
+
+.footer-section ul {
+  list-style: none; /* Eliminar viñetas de la lista */
+  padding: 0; /* Eliminar relleno de la lista */
+}
+
+.footer-section ul li {
+  margin-bottom: 10px; /* Espacio inferior entre elementos de la lista */
+}
+
+.footer-section ul li a {
+  color: #ffffff; /* Color de los enlaces */
+  text-decoration: none; /* Eliminar subrayado de los enlaces */
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline; /* Subrayar enlaces al pasar el mouse */
+}
+
+.social-icons a {
+  display: inline-block; /* Mostrar iconos en línea */
+  margin: 0 10px; /* Espacio entre iconos */
+  font-size: 24px; /* Tamaño de los iconos */
+  color: #ffffff; /* Color de los iconos */
+  text-decoration: none; /* Eliminar subrayado */
+}
+
+.social-icons a:hover {
+  color: #ffffff; /* Cambiar color al pasar el mouse */
+}
+
+.footer-bottom {
+  margin-top: 20px; /* Espacio superior */
+  border-top: 1px solid #ccc; /* Línea divisoria */
+  padding-top: 20px; /* Espacio superior */
+  font-size: 12px; /* Tamaño de fuente */
+  color: #ffffff; /* Color del texto */
+}
+
+/* Media query para pantallas más pequeñas (opcional) */
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column; /* Apilar secciones verticalmente en pantallas pequeñas */
+      align-items: center; /* Centrar secciones */
+  }
+
+  .footer-section {
+      min-width: auto; /* Eliminar ancho mínimo */
+      width: 100%; /* Ocupar todo el ancho */
+      text-align: center; /* Centrar texto */
+  }
+}
+
 /* Fuentes de Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 /* Considerar añadir una fuente display si se desea */
